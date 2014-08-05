@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wholesale.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @wholesale.address %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @wholesale.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @wholesale.email %>
+</p>
+
+<%= link_to 'Edit', edit_wholesale_path(@wholesale) %> |
+<%= link_to 'Back', wholesales_path %>
