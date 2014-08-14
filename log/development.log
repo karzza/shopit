@@ -823,3 +823,534 @@ Processing by WholesalesController#index as HTML
   [1m[35mWholesale Load (0.2ms)[0m  SELECT "wholesales".* FROM "wholesales"
   Rendered wholesales/index.html.erb within layouts/application (2.1ms)
 Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 96ms (Views: 84.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/wholesales.css?body=1" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+
+
+Started GET "/assets/shops.css?body=1" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/assets/wholesales.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/assets/waterproof.jpg" for 127.0.0.1 at 2014-08-06 14:56:12 +0800
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-06 14:56:32 +0800
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT "shops".* FROM "shops"[0m
+  Rendered shops/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wholesales" for 127.0.0.1 at 2014-08-06 14:56:33 +0800
+Processing by WholesalesController#index as HTML
+  [1m[35mWholesale Load (0.5ms)[0m  SELECT "wholesales".* FROM "wholesales"
+  Rendered wholesales/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/wholesales/new" for 127.0.0.1 at 2014-08-06 14:56:35 +0800
+Processing by WholesalesController#new as HTML
+  Rendered wholesales/_form.html.erb (24.1ms)
+  Rendered wholesales/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-06 14:56:42 +0800
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT "shops".* FROM "shops"[0m
+  Rendered shops/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:43:52 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:4)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:4
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345858702860'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:46:07 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:4)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:4
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345858702860'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:46:10 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:4)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:4
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345858702860'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/wholesales.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 11:46:22 +0800
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-14 11:47:05 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.6ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wholesales" for 127.0.0.1 at 2014-08-14 11:47:09 +0800
+Processing by WholesalesController#index as HTML
+  [1m[36mWholesale Load (0.4ms)[0m  [1mSELECT "wholesales".* FROM "wholesales"[0m
+  Rendered wholesales/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 20ms (Views: 16.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:49:22 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345857156940'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:50:44 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    6:   <%= javascript_include_tag 'application'%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345855912040'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:50:47 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    6:   <%= javascript_include_tag 'application'%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345855912040'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:50:51 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all'%>
+    6:   <%= javascript_include_tag 'application'%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345855912040'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:51:26 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345859089920'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:51:28 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (Invalid CSS after "...-align: center;": expected "}", was ""
+  (in /Users/CP/Documents/workspace/shopit/app/assets/stylesheets/application.css.scss:8)):
+    2: <html>
+    3: <head>
+    4:   <title>Shopit</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3677216992779320853_70345859089920'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/wholesales.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.3ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-08-14 11:52:52 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-14 11:52:57 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.2ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-14 11:53:00 +0800
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.2ms)[0m  [1mSELECT "shops".* FROM "shops"[0m
+  Rendered shops/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2014-08-14 11:53:10 +0800
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.2ms)[0m  SELECT "shops".* FROM "shops"
+  Rendered shops/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/shops.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/wholesales.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2014-08-14 11:53:23 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-14 11:53:24 +0800
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2014-08-14 11:53:24 +0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/CP/.rbenv/versions/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/CP/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.7ms)
